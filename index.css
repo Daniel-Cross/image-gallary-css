@@ -1,3 +1,81 @@
 .header {
     text-align: center;
 }
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    align-self: auto;
+}
+
+div.item {
+    position: relative;
+    float: left;
+    overflow: hidden;
+    margin: 10px 1%;
+    min-width: 220px;
+    max-width: 310px;
+    width: 100%;
+    background: #000000;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+}
+
+div.item.blue {
+    background-color: #3c5be4;
+}
+
+div.item.salmon {
+    background-color: salmon;
+}
+
+div.item.teal {
+    background-color: teal;
+}
+
+div.item:hover img {
+    opacity: 0.3;
+    filter: grayscale(100);
+}
+
+div.item * {
+    box-sizing: border-box;
+    transition: all 0.35s ease-in-out;
+}
+
+div.item img {
+    max-width: 100%;
+    vertical-align: top;
+    height: 220px;
+}
+
+div.item:hover i {
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 300ms 100ms cubic-bezier(0.175, 0.885, 0.32, 1.275)
+}
+
+div.item i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    font-size: 34px;
+    color: white;
+    width: 60px;
+    line-height: 60px;
+    background: #ffffff;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 300ms 0ms cubic-bezier(0.175, 0.885, 0.32, 1.275)
+}
+
+div.item.teal i {
+    color: teal;
+}
+
+div.item.blue i {
+    color: blue;
+}
+
+div.item.salmon i {
+    color: salmon;
+}
