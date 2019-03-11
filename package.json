@@ -1,0 +1,19 @@
+{
+  "name": "image-gallery-css",
+  "version": "1.0.0",
+  "description": "CSS experiment image gallery",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Daniel-Cross/image-gallery-css.git"
+  },
+  "author": "Daniel Cross",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Daniel-Cross/image-gallery-css/issues"
+  },
+  "homepage": "https://github.com/Daniel-Cross/image-gallery-css#readme"
+}
